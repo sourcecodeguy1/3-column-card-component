@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Frontend Mentor: 3 column preview card component solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+### The challenge
 
-### `npm start`
+Users should be able to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Links
 
-### `npm test`
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## My process
 
-### `npm run build`
+### Built with
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- CSS
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Styled Components](https://styled-components.com/) - For styles
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### What I learned
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I learned how to implement and utilized styled-components. It's a different way on how to style specific React components.
+In addition, this is mobile responsive utilizing CSS media queries breakpoints and flex box.
 
-### `npm run eject`
+To see how you can add code snippets, see below:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```html
+<StyledButton btnColor={textColor} bg={bgColor} onClick={onSubmit}>
+    Learn More
+</StyledButton>
+```
+```css
+.App{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+```
+```js
+import styled from "styled-components";
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+export const StyledButton = styled.button`
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 30px;
+    width:60%;
+    background: hsl(0, 0%, 95%);
+    color: ${ props => props.btnColor };
+    
+    &:hover{
+        background-color: ${ props => props.bg };
+        color: white;
+        cursor: pointer;
+    }
+`
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Continued development
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Since I utilized styled-components for only one React Js component,
+I'm tempted to continue using this package for the remaining components
+in this project in the future.
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Website - [juliowebmaster.com](https://juliowebmaster.com)
+- Frontend Mentor - [@sourcecodeguy1](https://www.frontendmentor.io/profile/sourcecodeguy1)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Installation
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Clone the project from GitHub
+- Make sure you switch to the project's directory
+- Run npm install to install the necessary packages
+- Then, run npm start to run the application

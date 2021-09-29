@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+body{
+    background-color: rgb(250, 250, 250);
+    padding-top: 70px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row{
+    width: 15%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.title{
+    color: hsl(0, 0%, 95%);
+    font-size: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.boxes{
+    padding: 16px 55px;
+    color: hsla(0, 0%, 100%, 0.75);
+    height: 450px;
 }
 
-.App-link {
-  color: #61dafb;
+.footer{
+    margin-top: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    .row{
+        width: 75%;
+    }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .row{
+        width: 33%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .row{
+        width: 25%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .row{
+        width: 25%;
+    }
+
+}
+
+@media only screen and (min-width: 1500px) {
+    .row{
+        width: 20%;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+    .row{
+        width: 15%;
+    }
+
 }

@@ -31,7 +31,7 @@ Users should be able to:
 I learned how to implement and utilized styled-components. It's a different way on how to style specific React components.
 In addition, this is mobile responsive utilizing CSS media queries breakpoints and flex box.
 
-To see how you can add code snippets, see below:
+A small preview of my code. Snippet down below:
 
 ```html
 <StyledButton btnColor={textColor} bg={bgColor} onClick={onSubmit}>
